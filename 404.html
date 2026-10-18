@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MEWorkout</title>
+<script>
+  // GitHub Pages paths are case-sensitive: send /meworkout/... (any casing) to /MEWorkout/...
+  (function () {
+    var m = location.pathname.match(/^\/([^\/]+)(\/.*)?$/);
+    if (m && m[1].toLowerCase() === 'meworkout' && m[1] !== 'MEWorkout') {
+      location.replace('/MEWorkout' + (m[2] || '/') + location.search + location.hash);
+    }
+  })();
+</script>
+</head>
+<body>
+<p>Siden findes ikke. Gå til <a href="/MEWorkout/">MEWorkout</a>.</p>
+</body>
+</html>
